@@ -181,7 +181,7 @@ header .info button {
   transform: translateY(-120px);
 }
 
-#services .button-column {
+#services .button-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -294,8 +294,28 @@ footer .footer-text span {
 /* Media queries */
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 426px) and (max-width: 960px) {
+  #services .button-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    width: 90%;
+    height: 30%;
+    margin-top: 50px;
+  }
 
+  #services .service-button {
+    width: 40%;
+  }
+
+  #services h1 {
+    transform: translateY(-170px);
+  }
+
+  .info p {
+    width: 70%;
+  }
 }
 
 /* Desktop Styles */
